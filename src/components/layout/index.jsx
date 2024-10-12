@@ -6,7 +6,7 @@ export default function Layout() {
   return (
     <div>
       <Header />
-      <div className="p-4">
+      <div className="p-4 h-[calc(100vh-80px)]">
         <Outlet />
       </div>
     </div>
