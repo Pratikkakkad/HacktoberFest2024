@@ -1,0 +1,41 @@
+{
+  "cards": [
+    {
+      "name": "BPCL SBI Credit Card OCTANE",
+      "fuel_reward_rate": "6.25%",
+      "monthly_reward_points": "25 RP per \u20b9100 = 1,250 RP",
+      "annual_reward_points": "15,000 RP",
+      "reward_value": "\u20b91,500 (1 RP = \u20b91)"
+    },
+    {
+      "name": "IndianOil Axis Bank Premium",
+      "fuel_reward_rate": "4%",
+      "monthly_reward_points": "6 EDGE Miles per \u20b9150 = 200 Miles",
+      "annual_reward_points": "2,400 Miles",
+      "reward_value": "\u20b92,400 (1 Mile = \u20b91)"
+    },
+    {
+      "name": "ICICI Bank HPCL Super Saver",
+      "fuel_reward_rate": "4%",
+      "monthly_reward_points": "16 RP per \u20b9100 = 800 RP",
+      "annual_reward_points": "9,600 RP",
+      "reward_value": "\u20b9960 (1 RP = \u20b90.10)"
+    },
+    {
+      "name": "HPCL Bank of Baroda ENERGIE",
+      "fuel_reward_rate": "4%",
+      "monthly_reward_points": "24 RP per \u20b9150 = 800 RP",
+      "annual_reward_points": "9,600 RP",
+      "reward_value": "\u20b9960 (1 RP = \u20b90.10)"
+    }
+  ],
+  "fuel_spend": "\u20b95000 per month or \u20b960,000 per year",
+  "conclusion": {
+    "best_benefits": "BPCL SBI Credit Card OCTANE offers the highest reward value for fuel spends at BPCL with \u20b91,500 annual rewards.",
+    "indi_oil_best": "IndianOil Axis Bank Premium Credit Card provides a high reward value of \u20b92,400 annually for IndianOil outlets.",
+    "hpcl_best": [
+      "ICICI Bank HPCL Super Saver Credit Card and HPCL Bank of Baroda ENERGIE Credit Card both provide \u20b9960 annually in rewards.",
+      "ICICI card includes other benefits like grocery cashback, making it a versatile option."
+    ]
+  }
+}
