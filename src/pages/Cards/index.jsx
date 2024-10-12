@@ -1,15 +1,12 @@
 import React from "react";
 import "./cards.scss";
 import { Card } from "../../components/Card";
+import Data from "../../mock/CardsData.json";
 
 export default function Cards() {
   return (
     <div className="cards-container">
-      <Card
-        title="Beautiful Mountain"
-        description="A beautiful mountain landscape view."
-        imageUrl="https://via.placeholder.com/400"
-      />
+      {Data.cards.length && Data.cards.map((card) => <Card data={card} />)}
     </div>
   );
 }
