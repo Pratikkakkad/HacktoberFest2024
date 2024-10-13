@@ -43,9 +43,9 @@ export default function Header() {
         <div className="hidden lg:flex lg:gap-x-12">
           <NavLink
             to="/cards"
-            className={`text-sm px-8 py-2 rounded-full font-semibold leading-6 hover:bg-blue-300 hover:text-white ${
+            className={`text-sm px-8 py-2 rounded-full font-semibold leading-6 hover:bg-brand-red-600 hover:text-white ${
               location.pathname === "/cards"
-                ? "bg-blue-500 text-white"
+                ? "bg-brand-red text-white"
                 : "hover:bg-gray-700"
             }`}
           >
@@ -53,9 +53,9 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/favorite-cards"
-            className={`text-sm px-8 py-2 rounded-full font-semibold leading-6 hover:bg-blue-300 hover:text-white ${
+            className={`text-sm px-8 py-2 rounded-full font-semibold leading-6 hover:bg-brand-red-600 hover:text-white ${
               location.pathname === "/favorite-cards"
-                ? "bg-blue-500 text-white"
+                ? "bg-brand-red text-white"
                 : "hover:bg-gray-700"
             }`}
           >
