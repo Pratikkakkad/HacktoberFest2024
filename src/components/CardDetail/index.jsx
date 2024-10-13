@@ -1,25 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import CardsData from "../../mock/DetailedCardData.json";
 
 const CardDetails = () => {
   const params = useParams();
+  const [card, setCard] = useState();
 
-  console.log("params", params)
+  useEffect(() => {
+    const filteredData = CardsData.filter((item) => {
+      item.name === "Indian Oil Axis Bank Credit Card";
+    });
+    setCard(filteredData[0]);
+  });
+  console.log("params", params);
   return (
     <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-      {/* Banner Image */}
       <img
-        src="https://via.placeholder.com/400x200" // Replace with actual card banner image
+        src="https://via.placeholder.com/400x200"
         alt={card.name}
         className="w-full h-48 object-cover"
       />
 
-      {/* Card Details */}
       <div className="p-6">
-        {/* Card Name */}
         <h2 className="text-2xl font-bold mb-4 text-gray-800">{card.name}</h2>
 
-        {/* Annual Fee & Renewal Waiver */}
         <div className="mb-4">
           <p className="text-gray-600">
             <strong>Annual Fee:</strong> ₹{card.annual_fee}
@@ -60,7 +64,6 @@ const CardDetails = () => {
           </ul>
         </div>
 
-        {/* Important Fact */}
         <div className="mt-4">
           <p className="text-gray-800 font-semibold">
             <strong>Important Fact:</strong> {card.important_fact}

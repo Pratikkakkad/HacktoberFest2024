@@ -6,6 +6,7 @@ import Cards from "./pages/Cards/index.jsx";
 import Home from "./pages/Home/index.jsx";
 import Layout from "./components/layout/index.jsx";
 import FavoriteCard from "./pages/FavoriteCards/index.jsx";
+import CardDetails from "./components/CardDetail/index.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/cards",
         element: <Cards />,
+      },
+      {
+        path: "/card/:id",
+        element: <CardDetails />,
       },
       {
         path: "/favorite-cards",
