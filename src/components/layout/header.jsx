@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 
@@ -26,6 +26,7 @@ export default function Header() {
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            onClick={handleMenuOpen}
           >
             <span className="sr-only">Open main menu</span>
             <svg
