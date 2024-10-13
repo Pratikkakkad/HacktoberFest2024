@@ -52,7 +52,7 @@ export default function Header() {
             className={`text-sm px-8 py-2 rounded-full font-semibold leading-6 hover:bg-brand-red-600 hover:text-white ${
               location.pathname === "/cards"
                 ? "bg-brand-red text-white"
-                : "hover:bg-gray-700"
+                : "hover:bg-brand-red-600"
             }`}
           >
             Cards
@@ -62,7 +62,7 @@ export default function Header() {
             className={`text-sm px-8 py-2 rounded-full font-semibold leading-6 hover:bg-brand-red-600 hover:text-white ${
               location.pathname === "/favorite-cards"
                 ? "bg-brand-red text-white"
-                : "hover:bg-gray-700"
+                : "hover:bg-brand-red-600"
             }`}
           >
             Favorite Cards
