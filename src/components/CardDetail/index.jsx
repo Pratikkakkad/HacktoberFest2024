@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CardsData from "../../mock/DetailedCardData.json";
 import Loader from "../Loader";
+import { getNameFromSlug } from "../../utils/utils";
 
 const CardDetails = () => {
   const params = useParams();
@@ -10,17 +11,19 @@ const CardDetails = () => {
 
   useEffect(() => {
     setLoading(true);
+    const slug = getNameFromSlug(params.id);
     const filteredData = CardsData.cards.filter((item) => {
-      return item.name === "Indian Oil Axis Bank Credit Card";
+      return item.name.toLowerCase() === slug.toLowerCase();
     });
+
     setCard(filteredData[0]);
     setLoading(false);
-  });
-  console.log("params", params);
+  }, [params]);
+
   return (
     <>
       {card && !loading ? (
-        <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="max-w mx-auto bg-white rounded-lg shadow-lg overflow-hidden m-2 ">
           <img
             src="https://via.placeholder.com/400x200"
             alt={card.name}
