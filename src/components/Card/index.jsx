@@ -23,7 +23,7 @@ export const Card = ({
         <p className="text-gray-700 text-base">Value: {reward_value}</p>
       </div>
       <div className="pt-4">
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button className="bg-brand-red hover:bg-brand-red-600 text-white font-bold py-2 px-4 rounded">
           View Details
         </button>
       </div>
