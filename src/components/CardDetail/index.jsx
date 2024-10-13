@@ -11,7 +11,7 @@ const CardDetails = () => {
   useEffect(() => {
     setLoading(true);
     const filteredData = CardsData.cards.filter((item) => {
-      item.name === "Indian Oil Axis Bank Credit Card";
+      return item.name === "Indian Oil Axis Bank Credit Card";
     });
     setCard(filteredData[0]);
     setLoading(false);
